@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Google Sans', 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background-color: #fff;
+    color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 48px 40px 36px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.google-logo {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Product Sans', 'Google Sans', 'Roboto', Arial, sans-serif;
+    letter-spacing: -5px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.g-blue {
+    color: #4285F4;
+}
+
+.g-red {
+    color: #EA4335;
+}
+
+.g-yellow {
+    color: #FBBC04;
+}
+
+.g-green {
+    color: #34A853;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #202124;
+}
+
+.subtitle {
+    font-size: 16px;
+    text-align: center;
+    color: #202124;
+    margin-bottom: 40px;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.input-field:focus {
+    border-color: #1a73e8;
+    border-width: 2px;
+    padding: 12px 14px;
+}
+
+.input-field:hover {
+    border-color: #80868b;
+}
+
+.form-step {
+    display: block;
+}
+
+.form-step.hidden {
+    display: none;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.user-avatar {
+    margin-bottom: 16px;
+}
+
+.avatar-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.user-email {
+    font-size: 16px;
+    color: #202124;
+    font-weight: 400;
+}
+
+.input-group {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.password-toggle:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.toggle-icon {
+    font-size: 18px;
+}
+
+.forgot-password {
+    margin-bottom: 24px;
+}
+
+.forgot-email {
+    margin-bottom: 24px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: rgba(26, 115, 232, 0.08);
+    text-decoration: underline;
+}
+
+.create-account {
+    padding: 8px 0;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.btn-primary:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.footer {
+    width: 100%;
+    max-width: 450px;
+    margin: 24px auto 0;
+    padding: 24px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.language-select {
+    border: none;
+    background: transparent;
+    color: #5f6368;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.language-select:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.notification.hidden {
+    display: none;
+}
+
+.notification-content {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: slideUp 0.3s ease;
+}
+
+.notification-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.notification-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #202124;
+}
+
+.notification-content p {
+    font-size: 14px;
+    color: #5f6368;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.notification-content strong {
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+.notification-content .btn {
+    margin-top: 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 24px 20px;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .container {
+        padding: 0;
+    }
+    
+    .footer {
+        padding: 16px 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+

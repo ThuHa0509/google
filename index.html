@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <span class="google-logo">
+                    <span class="g-blue">G</span>
+                    <span class="g-red">o</span>
+                    <span class="g-yellow">o</span>
+                    <span class="g-green">g</span>
+                    <span class="g-blue">l</span>
+                    <span class="g-red">e</span>
+                </span>
+            </div>
+            
+            <!-- Form nhập email -->
+            <div id="emailForm" class="form-step">
+                <h1 class="title">Đăng nhập</h1>
+                <p class="subtitle">Tiếp tục đến Gmail</p>
+                
+                <form id="loginForm" class="login-form">
+                    <div class="input-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="input-field" 
+                            placeholder="Email hoặc số điện thoại"
+                            autocomplete="email"
+                            required
+                            autofocus
+                        >
+                    </div>
+                    
+                    <div class="forgot-email">
+                        <a href="#" class="link">Quên email?</a>
+                    </div>
+                    
+                    <div class="info-text">
+                        Không phải máy tính của bạn? Sử dụng chế độ khách để đăng nhập riêng tư.
+                        <a href="#" class="link">Tìm hiểu thêm</a>
+                    </div>
+                    
+                    <div class="button-group">
+                        <a href="#" class="link create-account">Tạo tài khoản</a>
+                        <button type="submit" class="btn btn-primary">Tiếp theo</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Form nhập mật khẩu -->
+            <div id="passwordForm" class="form-step hidden">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <div class="avatar-circle">
+                            <span id="userInitial"></span>
+                        </div>
+                    </div>
+                    <div class="user-email" id="displayEmail"></div>
+                </div>
+                
+                <h1 class="title">Chào mừng</h1>
+                
+                <form id="passwordLoginForm" class="login-form">
+                    <div class="input-group">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="input-field" 
+                            placeholder="Nhập mật khẩu của bạn"
+                            autocomplete="current-password"
+                            required
+                            autofocus
+                        >
+                        <div class="password-toggle" id="passwordToggle">
+                            <span class="toggle-icon">👁️</span>
+                        </div>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="#" class="link">Quên mật khẩu?</a>
+                    </div>
+                    
+                    <div class="info-text">
+                        Không phải máy tính của bạn? Sử dụng chế độ khách để đăng nhập riêng tư.
+                        <a href="#" class="link">Tìm hiểu thêm</a>
+                    </div>
+                    
+                    <div class="button-group">
+                        <a href="#" class="link" id="backButton">Quay lại</a>
+                        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-links">
+                <select class="language-select">
+                    <option>Tiếng Việt</option>
+                    <option>English</option>
+                </select>
+                <a href="#" class="link">Trợ giúp</a>
+                <a href="#" class="link">Quyền riêng tư</a>
+                <a href="#" class="link">Điều khoản</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="notification-icon">📚</div>
+            <h3>Thông báo quan trọng</h3>
+            <p>Đây là một trang web được tạo ra <strong>chỉ với mục đích học tập</strong>.</p>
+            <p>Chúng tôi <strong>KHÔNG thu thập, lưu trữ hoặc sử dụng</strong> bất kỳ thông tin nào bạn nhập vào.</p>
+            <p>Tất cả dữ liệu chỉ được xử lý trên trình duyệt của bạn và không được gửi đến bất kỳ máy chủ nào.</p>
+            <button class="btn btn-primary" onclick="closeNotification()">Đã hiểu</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
